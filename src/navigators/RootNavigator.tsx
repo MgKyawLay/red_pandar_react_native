@@ -4,7 +4,6 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import BottomTabs from './BottomTabs';
 import AppBar from './AppBar';
 import LoginScreen from '../screens/auth/LoginScreen';
-import {View} from 'react-native';
 
 const Stack = createNativeStackNavigator();
 
@@ -20,7 +19,7 @@ const RootNavigator = () => {
         {!isSignedIn ? (
           <>
             <Stack.Screen
-              name="SignIn"
+              name="login"
               component={LoginScreen}
               options={{headerShown: false}}
             />
